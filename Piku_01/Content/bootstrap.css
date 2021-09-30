@@ -23,12 +23,13 @@ body {
 }
 
 aside {
-    grid-column: 6;
+    grid-column: 2;
     grid-row: 1 / span 2;
+    padding-left: 10em;
 }
 
 main {
-    margin: 0 2.4rem 3rem 0;
+    
 }
 
 article,
@@ -2912,7 +2913,7 @@ th {
 }
 
 .table {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 100%;
     margin-bottom: 20px;
 }
@@ -3236,7 +3237,6 @@ output {
 }
 
 .form-control {
-    display: block;
     width: 100%;
     height: 38px;
     padding: 7px 12px;

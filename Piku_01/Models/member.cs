@@ -22,7 +22,6 @@ namespace Piku_01.Models
         public static int con { get; set; }
         public static bool sec { get; set; }
         public static int num { get; set; }
-        
 
         public static void C(int _id)
         {
@@ -74,6 +73,19 @@ namespace Piku_01.Models
                 sec = true;
                 con = 0;
             }
+        }
+
+        public static int Basic(string text)
+        {
+            if (text == null)
+            {
+                return 0;
+            }
+            int finish = 100 / member.ShowData.Count;
+            int temp = member.temp.Count;
+            int _Basic = finish * temp;
+
+            return _Basic;
         }
     }
 }

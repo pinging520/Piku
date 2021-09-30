@@ -12,12 +12,8 @@ namespace Piku_01.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                foreach (member x in member.temp)
-                    Response.Write(x.name);
-            }
-            catch { }
+            ListView1.DataSource = member.temp;
+            ListView1.DataBind();
         }
     }
 }

@@ -13,6 +13,22 @@ namespace Piku_01.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            try
+            {
+                if ((Session["start"]) == null)
+                {
+                    Basic.Style["width"] = "00%";
+                    _Basic.Visible = false;
+                }
+                else { 
+                int a = Cont.Basic((Session["start"]).ToString());
+                Basic.Style["width"] = a+"%";
+                   
+                }
+            }
+            catch { }
+
             ListView2.DataSource = member.newitem;
             ListView2.DataBind();
             
@@ -51,6 +67,10 @@ namespace Piku_01.Web
             {
                 member.newitem.Add(new member() {id = member.Data[i].id,name = member.Data[i].name });
             }
+            _Basic.Visible = true;
+            Session["start"] = "true";
         }
+
+        
     }
 }
