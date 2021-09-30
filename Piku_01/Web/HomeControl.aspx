@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Compare.aspx.cs" Inherits="Piku_01.Web.Compare" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomeControl.aspx.cs" Inherits="Piku_01.Web.HomeControl" %>
 
 <!DOCTYPE html>
 

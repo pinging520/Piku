@@ -20,11 +20,6 @@ namespace Piku_01.Web
             ListView1.DataBind();
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void Button1_Click1(object sender, EventArgs e)
         {
             if (TextBox1.Text != "" || string.IsNullOrWhiteSpace(TextBox1.Text)==false)
@@ -39,14 +34,13 @@ namespace Piku_01.Web
         protected void Button2_Click(object sender, EventArgs e)
         {
             start();
-            
             ListView2.DataSource = member.newitem;
             ListView2.DataBind();
         }
 
         public void start() 
         {
-            member.Data = member.ShowData;
+            member.Data.AddRange(member.ShowData);
 
             if (member.newitem.Count != 0)
             {
@@ -57,10 +51,6 @@ namespace Piku_01.Web
             {
                 member.newitem.Add(new member() {id = member.Data[i].id,name = member.Data[i].name });
             }
-
         }
-
-
-
     }
 }

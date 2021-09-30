@@ -24,9 +24,9 @@ namespace Piku_01.Models
         public static int num { get; set; }
         
 
-        public static void C(string _name)
+        public static void C(int _id)
         {
-            if (member.newitem[0].name == _name)
+            if (member.newitem[0].id == _id)
             {
                 member.newitem.RemoveAt(0);
             }
@@ -35,8 +35,7 @@ namespace Piku_01.Models
                 member.newitem.RemoveAt(1);
             }
 
-            //null ?
-            if (member.temp.Find(x => x.name == member.newitem[0].name) == null)
+            if (member.temp.Find(x => x.id == member.newitem[0].id) == null)
             {
                 if (sec == true)
                 {
@@ -58,13 +57,11 @@ namespace Piku_01.Models
             else
             {
                 foreach(member _member in member.temp) { 
-                var a = member.Data.Find(x => x.name == _member.name);
+                var a = member.Data.Find(x => x.id == _member.id);
                 member.Data.Remove(a);
                 }
-
                 
                 member.newitem.Clear();
-
                 for (int i = 0; i < 2; i++)
                 {
                     if ( i < member.Data.Count)
@@ -76,15 +73,7 @@ namespace Piku_01.Models
                 num = 1;
                 sec = true;
                 con = 0;
-                
             }
-
-
         }
-
-
-
     }
-
-
 }

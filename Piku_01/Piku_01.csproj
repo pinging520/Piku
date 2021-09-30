@@ -121,10 +121,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Web\Compare.aspx" />
-    <Content Include="Web\Delete.aspx" />
     <Content Include="Web\Finally.aspx" />
     <Content Include="Web\Home.aspx" />
+    <Content Include="Web\HomeControl.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -189,20 +188,6 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Web\Compare.aspx.cs">
-      <DependentUpon>Compare.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web\Compare.aspx.designer.cs">
-      <DependentUpon>Compare.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Web\Finally.aspx.cs">
       <DependentUpon>Finally.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +201,13 @@
     </Compile>
     <Compile Include="Web\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\HomeControl.aspx.cs">
+      <DependentUpon>HomeControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\HomeControl.aspx.designer.cs">
+      <DependentUpon>HomeControl.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@
 
 namespace Piku_01.Web
 {
-    public partial class Delete
+    public partial class HomeControl
     {
 
         /// <summary>

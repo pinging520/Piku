@@ -7,7 +7,7 @@
                
                 <asp:ListView ID="ListView2" runat="server">
                     <ItemTemplate>
-                        <a href="Compare.aspx?id=<%#Eval("name") %>"><asp:Label ID="Label2" runat="server" Text='<%#Eval("name") %>'></asp:Label></a>
+                        <a href="HomeControl.aspx?Cid=<%#Eval("id") %>"><asp:Label ID="Label2" runat="server" Text='<%#Eval("name") %>'></asp:Label></a>
                     </ItemTemplate>
                 </asp:ListView>
                 
@@ -26,7 +26,7 @@
                             <font "header15-s"><%#Container.DataItemIndex+1 %></font>
                             <asp:Label ID="Label1" runat="server" Text='<%#Eval("name") %>' />
                             
-                            <a href="Delete.aspx?id=<%#Container.DataItemIndex %>" class="navbar-right">
+                            <a href="HomeControl.aspx?id=<%#Container.DataItemIndex %>" class="navbar-right">
                                 <asp:Label runat="server" class="btn btn-default" Text="Delete"></asp:Label>
                             </a>
                            
